@@ -3,12 +3,12 @@
 #src/test.sh
 EXPECTED="Hello, World!"
 
-OUTPUT=$(node -e "console.log(require('./src/app')('Test'))")
+OUTPUT=$(node -e "console.log(require('./src/app')('World'))")
 
-if { [ "$OUTPUT" == "$EXPECTED" ]; then
+if [ "$OUTPUT" == "$EXPECTED" ]; then
     echo "Test passed: Output is as expected."
     exit 0
 else
     echo "Test failed: Expected '$EXPECTED' but got '$OUTPUT'."
     exit 1
-fi}
+fi
