@@ -7,4 +7,4 @@ jobs:
       - name: Set API_key
         run: echo "API_key=12" >> $GITHUB_ENV
       - name: Use API_key
-        run: echo "using API_key"
+        run: echo "using $API_key"
